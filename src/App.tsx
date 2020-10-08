@@ -3,13 +3,15 @@ import React from 'react';
 import GlobalStyles from './styles/global';
 import SignIn from './pages/SignIn';
 
-const App: React.FC = () => {
-  return (
-    <>
+import { AuthProvider } from './context/AuthContext';
+
+const App: React.FC = () => (
+  <>
+    <AuthProvider>
       <SignIn />
-      <GlobalStyles />
-    </>
-  );
-};
+    </AuthProvider>
+    <GlobalStyles />
+  </>
+);
 
 export default App;
