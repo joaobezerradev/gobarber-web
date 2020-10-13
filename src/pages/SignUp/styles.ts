@@ -14,9 +14,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  place-content: center;
 
   width: 100%;
   max-width: 700px;
@@ -34,9 +31,11 @@ const appearFromRight = keyframes`
 `;
 
 export const AnimationContainer = styled.div`
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   animation: ${appearFromRight} 1s;
 
